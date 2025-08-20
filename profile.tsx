@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useAuth } from "@/hooks/useAuth";
+//import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { isUnauthorizedError } from "@/lib/authUtils";
@@ -43,14 +43,14 @@ type AccessControlFormData = z.infer<typeof accessControlSchema>;
 
 export default function Profile() {
   const { toast } = useToast();
-  const { user, isLoading: authLoading } = useAuth();
+//  const { user, isLoading: authLoading } = useAuth();
   const queryClient = useQueryClient();
   const [isEditingPersonal, setIsEditingPersonal] = useState(false);
   const [isEditingAccess, setIsEditingAccess] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   // Redirect if not authenticated
-  useEffect(() => {
+/*  useEffect(() => {
     if (!authLoading && !user) {
       toast({
         title: "Unauthorized",
@@ -58,11 +58,11 @@ export default function Profile() {
         variant: "destructive",
       });
       setTimeout(() => {
-        window.location.href = "/dshboard";
+        window.location.href = "/dashboard";
       }, 500);
       return;
     }
-  }, [user, authLoading, toast]);
+  }, [user, authLoading, toast]);*/
 
   // Fetch user profile data
   const { data: userProfile, isLoading: profileLoading } = useQuery<any>({
@@ -163,7 +163,7 @@ export default function Profile() {
   });
 
   // Initialize form values when profile data loads
-  useEffect(() => {
+  /*useEffect(() => {
     if (userProfile || user) {
       const profile = userProfile || user;
       personalForm.reset({
@@ -176,7 +176,7 @@ export default function Profile() {
         accessForm.reset(userProfile.accessSettings);
       }
     }
-  }, [userProfile, user, personalForm, accessForm]);
+  }, [userProfile, user, personalForm, accessForm]);*/
 
   const getUserInitials = (firstName?: string | null, lastName?: string | null, email?: string | null) => {
     if (firstName && lastName) {
@@ -213,15 +213,15 @@ export default function Profile() {
     updateAccessMutation.mutate(data);
   };
 
-  if (authLoading || profileLoading) {
+/*  if (authLoading || profileLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-blue"></div>
       </div>
     );
-  }
+  }*/
 
-  const profile = userProfile || user;
+  const profile = userProfile //|| user;
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
