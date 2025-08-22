@@ -1,0 +1,129 @@
+Level 1: Basics & Warm-Up
+
+Focus: Loops, conditionals, lists, functions, and simple logic.
+
+Even or Odd
+
+Input a number, print whether it's even or odd.
+
+Max of Three Numbers
+
+Write a function that returns the largest of three numbers.
+
+Count Vowels in a String
+
+Input a string, count the number of vowels (a, e, i, o, u).
+
+Reverse a String / Number
+
+Without using built-in reverse().
+
+Sum of Digits
+
+Input a number, return the sum of its digits.
+
+Check for Palindrome
+
+Is a string/number the same forward and backward?
+
+Find All Divisors of a Number
+
+FizzBuzz
+
+Print numbers 1 to 100.
+
+If divisible by 3, print "Fizz"
+
+If by 5, print "Buzz"
+
+If both, print "FizzBuzz"
+
+🟡 Level 2: Core Programming
+
+Focus: Arrays, dictionaries, nested loops, basic algorithmic thinking.
+
+Two Sum
+
+Given a list and a target, return indices of two numbers that add up to target.
+
+Find Duplicate Elements in a List
+
+Anagram Checker
+
+Check if two strings are anagrams (same letters, different order).
+
+Frequency Counter
+
+Count how often each character appears in a string.
+
+Linear Search / Binary Search
+
+Find Max & Min in a List (Without using max()/min())
+
+Remove Duplicates from List
+
+Sort a List Without Using Built-in Sort (e.g. bubble sort)
+
+🔵 Level 3: Intermediate Challenges
+
+Focus: Strings, nested structures, recursion, logic building.
+
+Longest Word in a Sentence
+
+Capitalize Each Word in a Sentence
+
+Calculate Factorial Recursively
+
+Prime Number Checker / List All Primes Up to N
+
+Fibonacci Series Generator (iterative and recursive)
+
+Find Second Largest Number in a List
+
+*Implement a Basic Calculator (support +, -, , /)
+
+Find All Pairs with a Given Sum
+
+🔴 Level 4: Advanced Logic
+
+Focus: Problem-solving, algorithms, data structures, time complexity.
+
+Valid Parentheses Checker
+
+E.g. "(({}[]))" → valid, "([)]" → invalid
+
+Merge Two Sorted Lists
+
+Rotate an Array (by K steps)
+
+Find Missing Number in 0..n Range
+
+Majority Element in a List (appears > n/2 times)
+
+Longest Substring Without Repeating Characters
+
+Matrix Transpose / Rotate Matrix 90°
+
+Implement a Stack or Queue using List
+
+🧠 Optional Stretch Goals (Real-World Feel)
+
+Basic Password Validator
+
+Must contain letters, numbers, and symbols.
+
+Simple Contact Book (Add, Search, Delete)
+
+Guess the Number Game
+
+Simple Todo App in CLI
+
+📌 Tips While Practicing
+
+Use functions – Don’t just write everything in one block.
+
+Write test cases – Try different inputs.
+
+Time yourself – Aim for under 10-15 mins per problem.
+
+Focus on readability – Clear variable names, comments.
